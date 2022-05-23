@@ -1,0 +1,66 @@
+<!--Version: 4.3-->
+<!--Last Edited: 23/05/22-->
+<!--Edited by: Tait-->
+
+<!--Doctype & Header Declaration-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>JavaScript</title>
+</head>
+
+<!--Body Section-->
+<body>
+<!--Bootstrap container class & title-->
+  <div class="container text-center">
+    <h1 class="display-4">
+      <i class="bi bi-camera2 text-danger"></i>
+      <strong>Anime Quote</strong>
+      <em>Generator</em>
+    </h1>
+
+<!--Bootstrap container class for search box form-->
+    <div class="container">
+      <div class="bg-light rounded container">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Search</label>
+            <input type="text" class="form-control" id="search" aria-describedby="searchText">
+            <div id="searchText" class="form-text">Input: Enter the name of the Anime!</div>
+          </div>
+          <button id="submit" type="submit" class="btn btn-danger">Submit</button>
+        </form>
+
+<!--Bootstrap container class for alert box-->
+        <div class="alert alert-warning" role="alert">
+          A simple warning alert-check it out!
+        </div>
+      </div>
+
+<!--Bootstrap container class for quote output & background image-->
+    <div>
+        <header class="display text-center">
+            <h1 id="random">Quote:</h1>
+            <div id="facts"></div>
+            <div id="length"></div>
+            <div class="image display">
+                <img src="./img/jezael-melgoza-_noSmX8Kgoo-unsplash.jpg" alt="closed eye cats" style="max-width: 100%;">
+            </div>
+        </header>
+
+    </div>
+</body>
+
+<!--Footer Section and Attribution-->
+<Footer>
+  <p>Endpoint: https://animechan.vercel.app/api/quotes/anime?title=</p>
+  <p>By Tait Cheung</p>
+</Footer>
+</html>
