@@ -10,3 +10,12 @@
     text-align: justify;
     text-align-last: left;
 }
+
+footer {
+    text-align: center;
+}
+
+header img{
+    height: 45vh;
+    border-radius: 50px
+}
