@@ -1,19 +1,18 @@
-<!--Version: 4.3-->
-<!--Last Edited: 23/05/22-->
+<!--Version: 4.34-->
+<!--Last Edited: 26/05/22-->
 <!--Edited by: Tait-->
 
-<!--Doctype & Header Declaration-->
+<!--Doctype & Header Declaration + Bootstrap CDN-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
-    <title>JavaScript</title>
+    <title>Anime Quote Generator</title>
 </head>
 
 <!--Body Section-->
@@ -21,8 +20,7 @@
   <!--Bootstrap container class & title-->
   <div class="container text-center">
     <h1 class="display-4">
-      <i class="bi bi-camera2 text-danger"></i>
-      <strong>Anime Quote</strong>
+      <i class="text-danger"><strong>Anime Quote</strong></i>
       <em>Generator</em>
     </h1>
 
@@ -42,28 +40,26 @@
         <div class="alert alert-warning" role="alert">
           A simple warning alert-check it out!
         </div>
+
+        <!--Bootstrap container class for quote output & background image-->
+        <div>
+            <header class="display text-center">
+                <hr>
+                <h1 id="random">Quote:</h1>
+                <div id="facts"></div>
+                <div id="length"></div>
+                <div class="image display">
+                    <img src="./img/jezael-melgoza-layMbSJ3YOE-unsplash.jpg" alt="anime wallpaper" style="max-width: 100%;">
+                </div>
+            </header>
+        </div>
       </div>
-    </div>
-
-    <!--Bootstrap container class for quote output & background image-->
-    <div>
-        <header class="display text-center">
-            <h1 id="random">Quote:</h1>
-            <div id="facts"></div>
-            <div id="length"></div>
-            <div class="image display">
-                <img src="./img/jezael-melgoza-layMbSJ3YOE-unsplash.jpg" alt="closed eye cats" style="max-width: 100%;">
-            </div>
-        </header>
-
     </div>
   </div>
 
-
   <!--Footer Section and Attribution-->
   <Footer>
-    <p>Endpoint: https://animechan.vercel.app/api/quotes/anime?title=</p>
-    <p>By Tait Cheung</p>
+    <p>Endpoint: https://animechan.vercel.app/api/quotes/anime?title=<br>By Tait Cheung</p>
   </Footer>
 </body>
 </html>

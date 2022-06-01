@@ -1,21 +1,54 @@
+/*[A] Home page*/
+/*Background/Cover-Image*/
+section {
+    background-image: url("../img/myke-simon-atsUqIm3wxo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+
+/*[B] Index page*/
+/*Width btwn content*/
 .display {
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 0px 0 0 0;
     text-align: center;
 }
 
 #facts {
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     text-align: justify;
     text-align-last: left;
 }
 
+/*Align Footer to centre*/
 footer {
     text-align: center;
 }
 
+/*Align header image to centre*/
 header img{
-    height: 45vh;
-    border-radius: 50px
+    height: 44vh;
+    border-radius: 50px;
 }
+
+/* [C] Applies to both home and index pages*/
+/* Styling button*/
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px
+  }
+
+/* Styling home page button*/
+  .btn-secondary {
+    background: #ff4141;
+    color: rgb(255, 255, 255);
+  }
