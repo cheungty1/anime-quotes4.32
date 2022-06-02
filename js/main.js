@@ -1,5 +1,5 @@
 //Version: 4.34
-//Last Edited: 26/05/22
+//Last Edited: 02/06/2022
 //Edited by: Tait
 
 //This Script connects to the animechan.vercel.app API and returns famous quotes of the anime searched by the user.
